@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Hub</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+    <div class="nav-center-container">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+        <div class="text-stack">
+            <span class="lang-top"> منصّة صوتـــك </span>
+            <span class="lang-bottom"> Smart Board | QR</span>
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <section class="board-section">
+            <div class="input-card suggestion-theme">
+                <h2>💡 نافذة الإقتراحات </h2>
+                <textarea id="suggestInput" placeholder="I suggest we..."></textarea>
+                <button id="submitBtn">ارسال</button>
+            </div>
+            <div id="suggestionList"></div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="board-section">
+            <div class="input-card problem-theme">
+                <h2>⚠️ شركاء الحل</h2>
+                <textarea id="problemInput" placeholder="Report an issue..."></textarea>
+                <button id="submitProblemBtn">ارسال</button>
+            </div>
+            <div id="problemList"></div>
+        </section>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
