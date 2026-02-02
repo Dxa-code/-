@@ -1,3 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC9i027GEm5rNxWSE4Xk4KZU972SW30goc",
+  authDomain: "feedback-hub-e321e.firebaseapp.com",
+  projectId: "feedback-hub-e321e",
+  storageBucket: "feedback-hub-e321e.firebasestorage.app",
+  messagingSenderId: "839743456358",
+  appId: "1:839743456358:web:c11dc87b1f614868e519a7"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 const suggestBtn = document.getElementById('submitBtn');
 const suggestInput = document.getElementById('suggestInput');
 const suggestionList = document.getElementById('suggestionList');
