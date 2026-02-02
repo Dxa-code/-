@@ -12,15 +12,13 @@ body {
     flex-direction: column; 
     align-items: center;    
     min-height: 100vh;
-    background-image: url(../images/background.jpeg);
+    /* Jump out of CSS folder, then into Images folder */
+    background-image: url('../images/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
-    /* FIX: Increase this value to push content below the 80px nav */
     padding-top: 110px; 
-    
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 /* Ensure the navbar height matches what we are clearing */
