@@ -45,37 +45,7 @@ body {
     border-top: 2px solid rgba(255,255,255,0.3);
 }
 
-/* .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    background: rgb(47, 107, 85);
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
 
-.logo-container { display: flex; align-items: center; gap: 10px; } */
-
-
-
-/* .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px; 
-    background: rgb(47, 107, 85);
-    color: white;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-} */
 
 .nav-center-container {
     display: flex;
@@ -108,7 +78,6 @@ body {
     opacity: 0.9; /* Slightly dimmer to make the top lang stand out */
 }
 
-/* Update your mobile media query to make sure it stays centered */
 @media (max-width: 480px) {
     .lang-top { font-size: 0.9rem; }
     .lang-bottom { font-size: 0.8rem; }
@@ -134,7 +103,7 @@ textarea {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 16px; /* Prevents auto-zoom on iPhones */
+    font-size: 16px; 
 }
 
 button {
@@ -199,4 +168,33 @@ button {
         border-top: 1px solid #eee;
         padding-top: 10px;
     }
+}
+
+
+
+.vote-controls button {
+    width: auto;
+    padding: 5px 15px;
+    background: #eee;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Style for when a button is clicked or disabled */
+.vote-controls button:disabled {
+    background: #ddd;
+    color: #999;
+    cursor: not-allowed;
+    border: 1px solid #eee;
+}
+
+.vote-controls .up-btn:hover:not(:disabled) { background: #2f6b55; color: white; }
+.vote-controls .down-btn:hover:not(:disabled) { background: #b22222; color: white; }
+
+.score {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 10px;
 }
